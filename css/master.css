@@ -53,7 +53,7 @@ header {
     background-image: url(../imgs/blue.jpeg);
     position: fixed;
     z-index: 222;
-    box-shadow: 0px  1px 7px #ddd;
+    border-bottom: 1px solid #ddd;
 }
 header .container span {
     font-size: 10px;
@@ -107,7 +107,7 @@ header .container .login a:hover {
         right: 0;
         background-image: url(../imgs/blue.jpeg);
         padding-top: 20px;
-        border-top: 1px solid #ddd;
+        border-top: .1px solid #ddd;
     }
     header .container .toggle-menu:hover + .box ul ,
     header .container .toggle-menu:hover + .box .login {
@@ -128,6 +128,9 @@ header .container .login a:hover {
 }
 .landing .container {
     padding-top: 200px;
+}
+.landing .container img {
+    max-width: 100%;
 }
 .landing .container .img {
     animation: up-and-down linear 3.7s infinite;
@@ -170,6 +173,7 @@ header .container .login a:hover {
 .code-skills {
     background-image: url(../imgs/blue.jpeg);
     padding-bottom: 100px;
+    padding: 0 15px;
 }
 .code-skills .container {
     background-image: url(../imgs/white.png);
@@ -183,7 +187,6 @@ header .container .login a:hover {
 }
 @media (max-width: 767px) {
     .code-skills .container {
-        border-radius: 0;
         padding: 15px;
     }
 }
@@ -195,12 +198,16 @@ header .container .login a:hover {
         width: 100%;
     }
 }
+.code-skills .container .box i {
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}
 .code-skills .container h2 {
     font-size: 50px;
 }
 @media (max-width: 767px) {
     .code-skills .container h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .code-skills .container p {
         font-size: 18px !important;
@@ -272,6 +279,46 @@ header .container .login a:hover {
     top: 50%;
 }
 /* End code skills */
+/* Start feedback and rank  */
+.feedback-rank {
+    background-image: url(../imgs/blue.jpeg);
+    padding: 15px 15px 100px 15px;
+}
+@media (max-width: 968px) {
+    .feedback-rank .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.feedback-rank .container .box {
+    background-image: url(../imgs/bl.jpg);
+}
+@media (max-width: 767px) {
+    .feedback-rank .container .box{
+        padding: 15px;
+    }
+}
+.feedback-rank .container .box i {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    box-shadow: 0 0 5px #ddd;
+}
+.feedback-rank .container .box h2 {
+    font-size: 40px;
+}
+@media (max-width: 767px) {
+    .feedback-rank .container .box h2 {
+        font-size: 35px;
+    }
+    .feedback-rank .container .box p {
+        font-size: 18px !important;
+    }
+}
+.feedback-rank .container .box img{
+    max-width: 100%;
+}
+/* End feedback and rank  */
 /* Start animation */
 @keyframes up-and-down {
     0% ,100%{
