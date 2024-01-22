@@ -226,10 +226,15 @@ header .container .login a:hover {
     }
 }
 .code-skills .container img {
-    max-width: 100%;
+    width: 100%;
 }
 .code-skills .container .img {
     overflow: hidden;
+}
+@media (max-width: 968px) {
+    .code-skills .container .img {
+        width: 100%;
+    }
 }
 .code-skills .container .img::before {
     content: "< Hello World />";
