@@ -123,9 +123,9 @@ header .container .login a:hover {
 /* End header */
 /* Start landing */
 .landing {
-    height: 95vh;
     background-image: url(../imgs/blue.jpeg);
     position: relative;
+    padding-bottom: 100px;
 }
 .landing .container {
     padding-top: 200px;
@@ -170,7 +170,7 @@ header .container .login a:hover {
 /* Start code skills */
 .code-skills {
     background-image: url(../imgs/blue.jpeg);
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .code-skills .container {
     background-image: url(../imgs/white.png);
