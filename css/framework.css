@@ -1,6 +1,7 @@
 :root {
     --blue-color: #007fff;
     --blue-alt-color: #0d69d5;
+    --yellow-color: #f9a825;
 }
 /* Satrt box */
 .d-flex {
@@ -43,6 +44,9 @@
 }
 .p-20 {
     padding: 20px;
+}
+.p-30 {
+    padding: 30px;
 }
 .pt-15 {
     padding-top: 15px;
@@ -124,6 +128,9 @@
 .bg-white {
     background-color: white;
 }
+.bg-yellow {
+    background-color: var(--yellow-color);
+}
 .bg-eee {
     background-color: #eee;
 }
@@ -139,12 +146,18 @@
 .bg-red {
     background-color: var(--red-color);
 }
+.bg-black {
+    background-color: black;
+}
 .c-white {
     color: white;
 }
 .c-blue {
     color: var(--blue-color);
 }
+.c-yellow {
+    color: var(--yellow-color);
+} 
 .c-ccc {
     color: #ccc;
 }
@@ -212,6 +225,9 @@
 }
 .border-blue {
     border: 1px solid var(--blue-color);
+}
+.border-black {
+    border: 1px solid black;
 }
 .border-white {
     border: 1px solid white;

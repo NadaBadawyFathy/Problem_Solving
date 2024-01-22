@@ -52,6 +52,7 @@ header {
     width: 100%;
     background-image: url(../imgs/blue.jpeg);
     position: fixed;
+    z-index: 222;
     box-shadow: 0px  1px 7px #ddd;
 }
 header .container span {
@@ -100,14 +101,14 @@ header .container .login a:hover {
     header .container .toggle-menu:hover + .box {
         display: block;
         position: absolute;
-        top: 106%;
+        top: 100%;
         width: 100%;
         height: 100vh;
         left: 0;
         right: 0;
         background-image: url(../imgs/blue.jpeg);
         padding-top: 20px;
-        z-index: 22;
+        border-top: 1px solid #ddd;
     }
     header .container .toggle-menu:hover + .box ul ,
     header .container .toggle-menu:hover + .box .login {
@@ -122,8 +123,9 @@ header .container .login a:hover {
 /* End header */
 /* Start landing */
 .landing {
-    height: 100vh;
+    height: 95vh;
     background-image: url(../imgs/blue.jpeg);
+    position: relative;
 }
 .landing .container {
     padding-top: 200px;
@@ -131,6 +133,7 @@ header .container .login a:hover {
 .landing .container .img {
     animation: up-and-down linear 3.7s infinite;
     position: relative;
+    z-index: 1;
 }
 @media (max-width: 1240px) {
     .landing .container .img {
@@ -164,6 +167,107 @@ header .container .login a:hover {
     color: white;
 }
 /* End landing */
+/* Start code skills */
+.code-skills {
+    background-image: url(../imgs/blue.jpeg);
+    padding-bottom: 50px;
+}
+.code-skills .container {
+    background-image: url(../imgs/white.png);
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (max-width: 968px) {
+    .code-skills .container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    .code-skills .container {
+        border-radius: 0;
+        padding: 15px;
+    }
+}
+.code-skills .container .box {
+    width: 550px;
+}
+@media (max-width: 968px) {
+    .code-skills .container .box {
+        width: 100%;
+    }
+}
+.code-skills .container h2 {
+    font-size: 50px;
+}
+@media (max-width: 767px) {
+    .code-skills .container h2 {
+        font-size: 40px;
+    }
+    .code-skills .container p {
+        font-size: 18px !important;
+    }
+}
+.code-skills .container p {
+    font-size: 23px;
+}
+.code-skills .container a {
+    padding: 10px 25px;
+    box-shadow: 0 0 5px #333;
+    transition: .3s;
+}
+.code-skills .container a:hover {
+    background-color: #ccc;
+    color: black;
+}
+@media (max-width: 767px) {
+    .code-skills .container a {
+        width: 100%;
+        text-align: center;
+    }
+}
+.code-skills .container img {
+    max-width: 100%;
+}
+.code-skills .container .img {
+    overflow: hidden;
+}
+.code-skills .container .img::before {
+    content: "< Hello World />";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%,-50%);
+    color: #ddd;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 233;
+    opacity: 0;
+    transition-duration: 1.4s;
+}
+.code-skills .container .img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    z-index: 33;
+    background-color: rgb(1 1 1 /50%);
+    opacity: 0;
+    transition: .8s;
+}
+.code-skills .container .img:hover::before ,
+.code-skills .container .img:hover:after {
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+}
+/* End code skills */
 /* Start animation */
 @keyframes up-and-down {
     0% ,100%{
