@@ -13,11 +13,14 @@
 .d-grid {
     display: grid;
 }
-.gap-30 {
-    gap: 30px;
+.gap-50 {
+    gap: 50px;
 }
 .gap-40 {
     gap: 40px;
+}
+.gap-30 {
+    gap: 30px;
 }
 .gap-20 {
     gap: 20px;
@@ -116,6 +119,9 @@
 }
 .mb-25 {
     margin-bottom: 25px;
+}
+.mb-30 {
+    margin-bottom: 30px;
 }
 .mr-10 {
     margin-right: 10px;
@@ -231,6 +237,9 @@
 /* Start border */
 .rad-6 {
     border-radius: 6px;
+}
+.rad-10 {
+    border-radius: 10px;
 }
 .rad-15 {
     border-radius: 15px;

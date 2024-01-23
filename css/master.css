@@ -255,7 +255,7 @@ header .container .login a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 233;
+    z-index: 33;
     opacity: 0;
     transition-duration: 1.4s;
 }
@@ -308,10 +308,10 @@ header .container .login a:hover {
     font-size: 40px;
 }
 @media (max-width: 767px) {
-    .feedback-rank .container .box h2 {
+    .feedback-rank .container h2 {
         font-size: 35px;
     }
-    .feedback-rank .container .box p {
+    .feedback-rank .container p {
         font-size: 18px !important;
     }
 }
@@ -319,6 +319,61 @@ header .container .login a:hover {
     max-width: 100%;
 }
 /* End feedback and rank  */
+/* Start engeded */
+.engeded {
+    background-image: url(../imgs/blue.jpeg);
+    padding: 0 15px;
+    padding-bottom: 100px;
+}
+.engeded .content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.engeded .content h1 {
+    font-size: 55px;
+}
+.engeded .container .box:first-of-type {
+    background-image: url(../imgs/nada.jpg);
+    padding: 40px;
+}
+@media (max-width: 968px) {
+    .engeded .container .box:first-of-type {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.engeded .container .box:first-of-type .inf {
+    background-image: url(../imgs/white.jpg);
+    box-shadow: 0px 0px 5px #0d69d5;
+    flex: 1;
+    padding: 40px 30px;
+    position: relative;
+    transition: .3s;
+}
+.engeded .container .box:first-of-type .inf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 7px;
+    background-color: #0d69d5;
+    transition: .5s;
+}
+.engeded .container .box:first-of-type .inf:hover {
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-5px);
+}
+.engeded .container .box:first-of-type .inf:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.engeded .container .box:first-of-type span {
+    font-size: 80px;
+}
+/* End engeded */
 /* Start animation */
 @keyframes up-and-down {
     0% ,100%{
