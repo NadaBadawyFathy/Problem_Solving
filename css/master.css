@@ -332,6 +332,14 @@ header .container .login a:hover {
 .engeded .content h1 {
     font-size: 55px;
 }
+@media (max-width: 767px) {
+    .engeded .content h1 {
+        font-size: 45px;
+    }
+    .engeded .content p {
+        font-size: 18px !important;
+    }
+}
 .engeded .container .box:first-of-type {
     background-image: url(../imgs/nada.jpg);
     padding: 40px;
@@ -340,6 +348,11 @@ header .container .login a:hover {
     .engeded .container .box:first-of-type {
         flex-direction: column;
         gap: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .engeded .container .box:first-of-type{
+        padding: 15px;
     }
 }
 .engeded .container .box:first-of-type .inf {
