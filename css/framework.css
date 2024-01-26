@@ -1,6 +1,7 @@
 :root {
     --blue-color: #007fff;
     --blue-alt-color: #0d69d5;
+    --transparent-color: rgb(0 127 255 /70%);
     --yellow-color: #f9a825;
 }
 /* Satrt box */
@@ -34,8 +35,14 @@
 .f-wrap {
     flex-wrap: wrap;
 }
+.flex-1 {
+    flex: 1;
+}
 .space-between {
     justify-content: space-between;
+}
+.flex-column {
+    flex-direction: column;
 }
 .d-block {
     display: block;
@@ -126,6 +133,12 @@
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
 .mr-10 {
     margin-right: 10px;
 }
@@ -201,11 +214,17 @@
 .text-c {
     text-align: center;
 }
+.fs-40 {
+    font-size: 40px;
+}
 .fs-30 {
     font-size: 30px;
 }
 .fs-20 {
     font-size: 20px;
+}
+.fs-25 {
+    font-size: 25px;
 }
 .fs-14 {
     font-size: 14px;

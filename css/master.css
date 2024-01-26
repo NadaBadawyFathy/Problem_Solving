@@ -187,7 +187,7 @@ header .container .login a:hover {
 }
 @media (max-width: 767px) {
     .code-skills .container {
-        padding: 15px;
+        padding: 20px;
     }
 }
 .code-skills .container .box {
@@ -267,7 +267,7 @@ header .container .login a:hover {
     left: 50%;
     top: 0;
     transform: translate(-50%,-50%);
-    z-index: 33;
+    z-index: 30;
     background-color: rgb(1 1 1 /50%);
     opacity: 0;
     transition: .8s;
@@ -295,7 +295,7 @@ header .container .login a:hover {
 }
 @media (max-width: 767px) {
     .feedback-rank .container .box{
-        padding: 15px;
+        padding: 20px;
     }
 }
 .feedback-rank .container .box i {
@@ -308,15 +308,20 @@ header .container .login a:hover {
     font-size: 40px;
 }
 @media (max-width: 767px) {
-    .feedback-rank .container h2 {
+    .feedback-rank .container .box h2 {
         font-size: 35px;
     }
     .feedback-rank .container p {
         font-size: 18px !important;
     }
 }
-.feedback-rank .container .box img{
-    max-width: 100%;
+.feedback-rank .container .box img {
+    width: 100%;
+}
+@media (min-width: 969px) {
+    .feedback-rank .container .box img {
+        height: 400px;
+    }
 }
 /* End feedback and rank  */
 /* Start engeded */
@@ -326,11 +331,12 @@ header .container .login a:hover {
     padding-bottom: 100px;
 }
 .engeded .content {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .engeded .content h1 {
-    font-size: 55px;
+    font-size: 60px;
+    word-spacing: 10px;
 }
 @media (max-width: 767px) {
     .engeded .content h1 {
@@ -340,9 +346,9 @@ header .container .login a:hover {
         font-size: 18px !important;
     }
 }
-.engeded .container .box:first-of-type {
+.engeded .container .box {
     background-image: url(../imgs/nada.jpg);
-    padding: 40px;
+    padding: 45px;
 }
 @media (max-width: 968px) {
     .engeded .container .box:first-of-type {
@@ -351,8 +357,8 @@ header .container .login a:hover {
     }
 }
 @media (max-width: 767px) {
-    .engeded .container .box:first-of-type{
-        padding: 15px;
+    .engeded .container .box {
+        padding: 20px;
     }
 }
 .engeded .container .box:first-of-type .inf {
@@ -386,7 +392,478 @@ header .container .login a:hover {
 .engeded .container .box:first-of-type span {
     font-size: 80px;
 }
+@media (max-width: 968px) {
+    .engeded .container .info {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.engeded .container .info .box {
+    background-image: url(../imgs/bl.jpg);
+}
+@media (max-width: 767px) {
+    .engeded .container .info .box {
+        padding: 20px !important;
+    }
+}
+.engeded .container .box i {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    box-shadow: 0 0 5px #ddd;
+}
+.engeded .container .box h2 {
+    font-size: 40px;
+}
+@media (max-width: 767px) {
+    .engeded .container .box h2 {
+        font-size: 35px;
+    }
+}
+.engeded .container .box .img {
+    overflow: hidden;
+}
+.engeded .container .box .img::after {
+    content: "Author kata that focus on your interests and train specific skill sets. Challenge the community with your insight and code understanding. Create everything from common developer interview questions to challenges that push the limits of your creativity. Gain honor within the coding dojo.";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0 0 0 /60%);
+    transition: .7s;
+    border: 1px solid;
+    border-color: transparent transparent #ddd #ddd;
+}
+.engeded .container .box .img:hover::after {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 555px) {
+    .engeded .container .box .img::after {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+.engeded .container .box img {
+    width: 100%;
+}
+@media (min-width: 969px) {
+    .engeded .container .box img {
+        height: 500px;
+    }
+}
 /* End engeded */
+/* Start use coding */
+.use-coding {
+    background-image: url(../imgs/blue.jpeg);
+    padding: 0 15px;
+    padding-bottom: 100px;
+}
+.use-coding .content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.use-coding .content h1 {
+    font-size: 80px;
+    word-spacing: 10px;
+}
+@media (max-width: 767px) {
+    .use-coding .content h1 {
+        font-size: 45px;
+    }
+    .use-coding .content p {
+        font-size: 18px !important;
+    }
+}
+.use-coding .container .box1 {
+    grid-template-columns: repeat(auto-fill, minmax(330px,1fr));
+}
+.use-coding .container .box1 .box {
+    color: #ddd;
+    background-image: url(../imgs/bl.jpeg);
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 767px) {
+    .use-coding .container .box1 .box {
+        padding: 20px;
+    }
+}
+.use-coding .container .box1 .box::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(0 0 0 /40%);
+    width: 0;
+    height: 0;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    transition: .3s;
+}
+.use-coding .container .box1 .box:hover::before {
+    width: 100%;
+    height: 100%;
+}
+.use-coding .container .box1 .box i {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    transition: .3s;
+}
+.use-coding .container .box1 .box:hover i {
+    color: #333;
+}
+.use-coding .container .box1 .box p {
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .use-coding .container .box1 .box p {
+        font-size: 15px;
+    }
+}
+.use-coding .container .box2 {
+    justify-content: center;
+    background-image: url(../imgs/bl.jpg);
+}
+@media (max-width: 968px) {
+    .use-coding .container .box2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+.use-coding .container .box2 .box {
+    width: 35%;
+}
+@media (max-width: 968px) {
+    .use-coding .container .box2 .box {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .use-coding .container .box2 .box h2 {
+        font-size: 35px;
+    }
+}
+.use-coding .container .box2 .box img {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 5px #0d69d5;
+    transition: .3s;
+}
+.use-coding .container .box2 .box img:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 968px) {
+    .use-coding .container .box3 {
+        flex-direction: column;
+    }
+}
+.use-coding .container .box3 .box {
+    background-image: url(../imgs/bl.jpg);
+}
+.use-coding .container .box3 .box i {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    transition: .3s;
+}
+.use-coding .container .box3 .box i:hover {
+    color: #333;
+}
+.use-coding .container .box3 .box p {
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .use-coding .container .box3 .box p {
+        font-size: 15px;
+    }
+}
+/* End use coding */
+/* Start the latest */
+.latest {
+    background-image: url(../imgs/blue.jpeg);
+    padding: 0 15px;
+    padding-bottom: 100px;
+}
+.latest .content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.latest .content h1 {
+    font-size: 80px;
+    word-spacing: 10px;
+}
+@media (max-width: 767px) {
+    .latest .content h1 {
+        font-size: 45px;
+    }
+    .latest .content p {
+        font-size: 18px;
+    }
+}
+.latest .container .box1 {
+    background-image: url(../imgs/bl.jpg);
+    transition: .3s;
+}
+.latest .container .box1:hover {
+    transform: scale(0.9);
+}
+@media (max-width: 968px) {
+    .latest .container .box1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.latest .container .box1 .img {
+    width: 100%;
+    overflow: hidden;
+}
+.latest .container .box1 img {
+    width: 600px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+@media (max-width: 968px) {
+    .latest .container .box1 img {
+        width: 100%;
+        border-radius: 15px 15px 0 0px;
+    }
+}
+.latest .container .box1 .img::before {
+    content: 'Programming';
+    position: absolute;
+    color: #ddd;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100%;
+    font-size: 30px;
+    background-color: rgb(0 127 255 /40%);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.latest .container .box1:hover .img::before {
+    left: 0;
+}
+.latest .container .box1 .info h2 {
+    font-size: 60px;
+}
+@media (max-width: 767px) {
+    .latest .container .box1 .info {
+        padding: 20px;
+        padding-top: 0;
+    }
+    .latest .container .box1 .info h2 {
+        font-size: 40px;
+    }
+}
+.latest .container .box1 .info p {
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .latest .container .box1 .info p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+.latest .container .box2 .box {
+    width: 50%;
+    background-image: url(../imgs/bl.jpg);
+    transition: .3s;
+}
+@media (max-width: 968px) {
+    .latest .container .box2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .latest .container .box2 .box {
+        width: 100%;
+    }
+}
+.latest .container .box2 .box:hover {
+    transform: scale(.9);
+}
+.latest .container .box2 .box img {
+    border-radius: 15px 15px 0 0px;
+    opacity: .6;
+    transition: .3s;
+}
+@media (min-width: 969px) {
+    .latest .container .box2 .box img {
+        height: 400px;
+    }
+}
+.latest .container .box2 .box:hover img {
+    opacity: 1;
+}
+.latest .container .box2 .box a {
+    padding: 2px 5px;
+}
+.latest .container .box2 .box h2 {
+    font-size: 50px;
+}
+@media (max-width: 767px) {
+    .latest .container .box2 .box .info {
+        padding: 20px;
+    }
+    .latest .container .box2 .box h2 {
+        font-size: 40px;
+    }
+}
+.latest .container .box2 .box p {
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .latest .container .box2 .box p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+.latest .container .box2 .box .cont {
+    align-items: center;
+}
+.latest .container .box2 .box .cont img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+/* End the latest */
+/* Start qualified */
+.qualified {
+    background-image: url(../imgs/blue.jpeg);
+    padding: 0 15px;
+    padding-bottom: 100px;
+}
+.qualified .container {
+    background-image: url(../imgs/blue.jpg);
+}
+@media (max-width: 767px) {
+    .qualified .container {
+        padding: 20px;
+    }
+}
+.qualified .container .box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.qualified .container .box span {
+    word-spacing: 5px;
+}
+.qualified .container .box div {
+    margin: 0 auto 40px;
+}
+.qualified .container .box div h1 {
+    font-size: 55px;
+}
+.qualified .container .box p {
+    line-height: 25px;
+}
+@media (max-width: 767px) {
+    .qualified .container .box p {
+        font-size: 18px;
+    }
+}
+.qualified .container .box div span {
+    float: right;
+}
+.qualified .container .box a {
+    margin: 0 auto;
+    padding: 20px 40px;
+    transition: .3s;
+}
+.qualified .container .box a:hover {
+    transform: scale(.9);
+    background-color: black;
+    color: #ddd;
+}
+/* End qualified */
+/* Start footer */
+.footer {
+    background-image: url(../imgs/blue.jpeg);
+    padding: 0 15px;
+    border-top: 1px solid #ddd;
+}
+.footer .container {
+    grid-template-columns: 40% repeat(4, auto);
+    justify-content: space-between;
+    padding: 40px 0;
+}
+@media (max-width: 968px) {
+    .footer .container {
+        grid-template-columns: repeat(1, 100%);
+        gap: 30px;
+    }
+}
+.footer .container .box .content {
+    align-items: center;
+}
+.footer .container .box:first-of-type i {
+    padding: 8px;
+}
+.footer .container .box .lang span {
+    background-color: #ddd;
+    padding: 5px 10px;
+    display: inline-block;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .container .box .lang span:hover {
+    color: #0d69d5;
+}
+.footer .container .box a {
+    display: block;
+    color: #ccc;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+.footer .container .box a:hover {
+    color: white;
+}
+.footer .container:last-of-type {
+    border-top: 1px solid #ddd;
+}
+@media (max-width: 767px) {
+    .footer .container:last-of-type {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.footer .container:last-of-type p {
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .container:last-of-type p:hover {
+    color: white;
+}
+.footer .container:last-of-type i {
+    font-size: 20px;
+    margin-right: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+.footer .container:last-of-type i:hover {
+    color: white;
+    transform: scale(1.2);
+}
+/* End footer */
 /* Start animation */
 @keyframes up-and-down {
     0% ,100%{
