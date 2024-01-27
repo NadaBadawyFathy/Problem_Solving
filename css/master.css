@@ -420,11 +420,13 @@ header .container .login a:hover {
         font-size: 35px;
     }
 }
-.engeded .container .box .img {
+.engeded .container .box .img.img1 ,
+.engeded .container .box .img.img2 {
     overflow: hidden;
 }
-.engeded .container .box .img::after {
-    content: "Author kata that focus on your interests and train specific skill sets. Challenge the community with your insight and code understanding. Create everything from common developer interview questions to challenges that push the limits of your creativity. Gain honor within the coding dojo.";
+.engeded .container .box .img1::after ,
+.engeded .container .box .img2::after {
+    content: '';
     position: absolute;
     left: 0;
     bottom: -100%;
@@ -439,7 +441,14 @@ header .container .login a:hover {
     background-color: rgb(0 0 0 /60%);
     transition: .5s;
 }
-.engeded .container .box .img:hover::after {
+.engeded .container .box .img1::after {
+    content: "Author kata that focus on your interests and train specific skill sets. Challenge the community with your insight and code understanding. Create everything from common developer interview questions to challenges that push the limits of your creativity. Gain honor within the coding dojo.";
+}
+.engeded .container .box .img2::after {
+    content: "Compare your solution with others after each kata for greater understanding. Discuss kata, best practices, and innovative techniques with the community. Have your mind blown by how different other solutions can be from your own.";
+}
+.engeded .container .box .img1:hover::after,
+.engeded .container .box .img2:hover::after {
     bottom: 0;
 }
 @media (max-width: 555px) {
@@ -544,6 +553,9 @@ header .container .login a:hover {
     .use-coding .container .box2 .box {
         width: 100%;
     }
+}
+.use-coding .container .box2 .box .h2 {
+    min-height: 100px;
 }
 @media (max-width: 767px) {
     .use-coding .container .box2 .box h2 {
