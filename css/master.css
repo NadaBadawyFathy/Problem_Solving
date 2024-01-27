@@ -1,6 +1,9 @@
 /* Start variables */
 :root {
-    
+    --blue-color: #007fff;
+    --blue-alt-color: #0d69d5;
+    --transparent-color: rgb(0 127 255 /70%);
+    --yellow-color: #f9a825;
 }
 /* End variables */
 /* Start global rules */
@@ -50,7 +53,7 @@ body{
 /* Start header */
 header {
     width: 100%;
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     position: fixed;
     z-index: 222;
     border-bottom: 1px solid #ddd;
@@ -60,9 +63,6 @@ header .container span {
     float: right;
     margin-top: -20px;
     margin-bottom: 20px;
-}
-header .container .box {
-    flex: 1;
 }
 header .container ul li a {
     transition: .3s;
@@ -78,10 +78,7 @@ header .container ul li a:hover {
 }
 header .container .login a {
     padding: 10px 25px;
-    position: relative;
     transition: .3s;
-    display: block;
-    text-align: center;
 }
 header .container .login a:hover {
     color: #ccc;
@@ -105,7 +102,7 @@ header .container .login a:hover {
         height: 100vh;
         left: 0;
         right: 0;
-        background-image: url(../imgs/blue.jpeg);
+        background-image: url(../imgs/background.jpeg);
         padding-top: 20px;
         border-top: .1px solid #ddd;
     }
@@ -122,7 +119,7 @@ header .container .login a:hover {
 /* End header */
 /* Start landing */
 .landing {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     position: relative;
     padding-bottom: 100px;
 }
@@ -135,7 +132,7 @@ header .container .login a:hover {
     }
 }
 .landing .container .text {
-    width: 60%;
+    width: 50%;
 }
 @media (max-width: 1240px) {
     .landing .container .img {
@@ -144,7 +141,6 @@ header .container .login a:hover {
     .landing .container .text {
         text-align: center;
         width: 100%;
-        margin: 0 auto;
     }
 }
 .landing .container h1 {
@@ -167,26 +163,26 @@ header .container .login a:hover {
     }
 }
 .landing .container a:hover {
-    background-color: #0d69d5;
+    background-color: var(--blue-alt-color);
     color: white;
 }
 .landing .container img {
     max-width: 100%;
 }
 .landing .container .img {
-    animation: up-and-down linear 3.7s infinite;
+    animation: up-and-down linear 2.5s infinite;
     position: relative;
     z-index: 1;
 }
 /* End landing */
 /* Start code skills */
 .code-skills {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding-bottom: 100px;
     padding: 0 15px;
 }
 .code-skills .container {
-    background-image: url(../imgs/white.png);
+    background-image: url(../imgs/sharpen.png);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -291,7 +287,7 @@ header .container .login a:hover {
 /* End code skills */
 /* Start feedback and rank  */
 .feedback-rank {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding: 15px 15px 100px 15px;
 }
 @media (max-width: 968px) {
@@ -301,7 +297,7 @@ header .container .login a:hover {
     }
 }
 .feedback-rank .container .box {
-    background-image: url(../imgs/bl.jpg);
+    background-image: url(../imgs/bg-black.jpg);
 }
 @media (max-width: 767px) {
     .feedback-rank .container .box{
@@ -336,7 +332,7 @@ header .container .login a:hover {
 /* End feedback and rank  */
 /* Start engeded */
 .engeded {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding: 0 15px;
     padding-bottom: 100px;
 }
@@ -357,7 +353,7 @@ header .container .login a:hover {
     }
 }
 .engeded .container .box {
-    background-image: url(../imgs/nada.jpg);
+    background-image: url(../imgs/engaged.jpg);
     padding: 45px;
 }
 @media (max-width: 968px) {
@@ -373,7 +369,7 @@ header .container .login a:hover {
 }
 .engeded .container .box:first-of-type .inf {
     background-image: url(../imgs/white.jpg);
-    box-shadow: 0px 0px 5px #0d69d5;
+    box-shadow: 0px 0px 5px var(--blue-alt-color);
     flex: 1;
     padding: 40px 30px;
     position: relative;
@@ -387,7 +383,7 @@ header .container .login a:hover {
     right: 50%;
     width: 0;
     height: 7px;
-    background-color: #0d69d5;
+    background-color: var(--blue-alt-color);
     transition: .5s;
 }
 .engeded .container .box:first-of-type .inf:hover {
@@ -409,7 +405,7 @@ header .container .login a:hover {
     }
 }
 .engeded .container .info .box {
-    background-image: url(../imgs/bl.jpg);
+    background-image: url(../imgs/bg-black.jpg);
 }
 @media (max-width: 767px) {
     .engeded .container .info .box {
@@ -478,7 +474,7 @@ header .container .login a:hover {
 /* End engeded */
 /* Start use coding */
 .use-coding {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding: 0 15px;
     padding-bottom: 100px;
 }
@@ -503,7 +499,7 @@ header .container .login a:hover {
 }
 .use-coding .container .box1 .box {
     color: #ddd;
-    background-image: url(../imgs/bl.jpeg);
+    background-image: url(../imgs/use-coding.jpeg);
     position: relative;
     z-index: 1;
 }
@@ -548,7 +544,7 @@ header .container .login a:hover {
 }
 .use-coding .container .box2 {
     justify-content: center;
-    background-image: url(../imgs/bl.jpg);
+    background-image: url(../imgs/bg-black.jpg);
 }
 @media (max-width: 968px) {
     .use-coding .container .box2 {
@@ -575,7 +571,7 @@ header .container .login a:hover {
 .use-coding .container .box2 .box img {
     width: 80px;
     height: 80px;
-    box-shadow: 0 0 5px #0d69d5;
+    box-shadow: 0 0 5px var(--blue-alt-color);
     transition: .3s;
 }
 .use-coding .container .box2 .box img:hover {
@@ -587,7 +583,7 @@ header .container .login a:hover {
     }
 }
 .use-coding .container .box3 .box {
-    background-image: url(../imgs/bl.jpg);
+    background-image: url(../imgs/bg-black.jpg);
 }
 .use-coding .container .box3 .box i {
     width: 40px;
@@ -609,7 +605,7 @@ header .container .login a:hover {
 /* End use coding */
 /* Start the latest */
 .latest {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding: 0 15px;
     padding-bottom: 100px;
 }
@@ -630,7 +626,7 @@ header .container .login a:hover {
     }
 }
 .latest .container .box1 {
-    background-image: url(../imgs/bl.jpg);
+    background-image: url(../imgs/bg-black.jpg);
     transition: .3s;
 }
 .latest .container .box1:hover {
@@ -699,7 +695,7 @@ header .container .login a:hover {
 }
 .latest .container .box2 .box {
     width: 50%;
-    background-image: url(../imgs/bl.jpg);
+    background-image: url(../imgs/bg-black.jpg);
     transition: .3s;
 }
 @media (max-width: 968px) {
@@ -750,9 +746,6 @@ header .container .login a:hover {
         margin-bottom: 20px;
     }
 }
-.latest .container .box2 .box .cont {
-    align-items: center;
-}
 .latest .container .box2 .box .cont img {
     width: 60px;
     height: 60px;
@@ -761,7 +754,7 @@ header .container .login a:hover {
 /* End the latest */
 /* Start qualified */
 .qualified {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding: 0 15px;
     padding-bottom: 100px;
 }
@@ -810,7 +803,7 @@ header .container .login a:hover {
 /* End qualified */
 /* Start footer */
 .footer {
-    background-image: url(../imgs/blue.jpeg);
+    background-image: url(../imgs/background.jpeg);
     padding: 0 15px;
     border-top: 1px solid #ddd;
 }
@@ -843,7 +836,7 @@ header .container .login a:hover {
     transition: .3s;
 }
 .footer .container .box .lang span:hover {
-    color: #0d69d5;
+    color: var(--blue-alt-color);
 }
 .footer .container .box a {
     display: block;
@@ -877,7 +870,7 @@ header .container .login a:hover {
     cursor: pointer;
 }
 .footer .container:last-of-type i:hover {
-    color: #0d69d5;
+    color: var(--blue-alt-color);
     transform: scale(1.2);
 }
 /* End footer */
