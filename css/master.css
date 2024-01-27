@@ -129,13 +129,13 @@ header .container .login a:hover {
 .landing .container {
     padding-top: 200px;
 }
-.landing .container img {
-    max-width: 100%;
+@media (max-width: 1240px) {
+    .landing .container {
+        display: block;
+    }
 }
-.landing .container .img {
-    animation: up-and-down linear 3.7s infinite;
-    position: relative;
-    z-index: 1;
+.landing .container .text {
+    width: 60%;
 }
 @media (max-width: 1240px) {
     .landing .container .img {
@@ -143,6 +143,8 @@ header .container .login a:hover {
     }
     .landing .container .text {
         text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 .landing .container h1 {
@@ -167,6 +169,14 @@ header .container .login a:hover {
 .landing .container a:hover {
     background-color: #0d69d5;
     color: white;
+}
+.landing .container img {
+    max-width: 100%;
+}
+.landing .container .img {
+    animation: up-and-down linear 3.7s infinite;
+    position: relative;
+    z-index: 1;
 }
 /* End landing */
 /* Start code skills */
