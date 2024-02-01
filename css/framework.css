@@ -37,6 +37,9 @@
 .flex-column {
     flex-direction: column;
 }
+.space-between {
+    justify-content: space-between;
+}
 .d-block {
     display: block;
 }
@@ -78,6 +81,12 @@
 .mb-50 {
     margin-bottom: 50px;
 }
+.mb-80 {
+    margin-bottom: 80px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
 .mr-30 {
     margin-right: 30px;
 }
@@ -95,7 +104,7 @@
 .bg-blue {
     background-color: var(--blue-color);
 }
-.bg-ccc {
+.bg-ddd {
     background-color: #ddd;
 }
 .c-white {
@@ -107,8 +116,8 @@
 .c-blue {
     color: var(--blue-color);
 }
-.c-ccc {
-    color: #ccc;
+.c-ddd {
+    color: #ddd;
 }
 /* End color */
 /* Start position */
