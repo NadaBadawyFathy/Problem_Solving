@@ -1262,5 +1262,6 @@ header .container .login a:hover {
 }
 .using-coding .container h1 {
     padding: 7px 10px;
+    cursor: default;
 }
 /* -----------------------------------------------End Page three------------------------------------------------ */
