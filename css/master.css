@@ -147,9 +147,9 @@ header .container .login a:hover {
 .landing .container h1 {
     font-size: 55px;
 }
-@media (max-width: 1240px) {
+@media (max-width: 767px) {
     .landing .container h1 {
-        font-size: 39px;
+        font-size: 42px;
     }
 }
 .landing .container a {
@@ -697,6 +697,7 @@ header .container .login a:hover {
 .latest .container .box2 .box {
     width: 50%;
     background-image: url(../imgs/bg-black.jpg);
+    position: relative;
     transition: .3s;
 }
 @media (max-width: 968px) {
@@ -744,7 +745,16 @@ header .container .login a:hover {
 @media (max-width: 767px) {
     .latest .container .box2 .box p {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 80px;
+    }
+}
+.latest .container .box2 .box .info .cont {
+    position: absolute;
+    bottom: 30px;
+}
+@media (max-width: 767px) {
+    .latest .container .box2 .box .info .cont {
+        bottom: 20px;
     }
 }
 .latest .container .box2 .box .cont img {
@@ -894,8 +904,30 @@ header .container .login a:hover {
     padding: 200px 15px;
     padding-bottom: 100px;
 }
+@media (max-width: 767px) {
+    .blog {
+        padding-top: 150px;
+    }
+}
 .blog .content {
     padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+    .blog .content {
+        padding-bottom: 50px;
+    }
+}
+.blog .content h1 {
+    font-size: 100px;
+    word-spacing: 10px;
+}
+@media (max-width: 767px) {
+    .blog .content h1 {
+        font-size: 45px;
+    }
+    .blog .content p {
+        font-size: 18px;
+    }
 }
 .blog .content .links a {
     display: inline-block;
@@ -926,18 +958,6 @@ header .container .login a:hover {
 .blog .content .links a:hover {
     color: #ccc;
     box-shadow: 0px 0px 5px #007fff;
-}
-.blog .content h1 {
-    font-size: 100px;
-    word-spacing: 10px;
-}
-@media (max-width: 767px) {
-    .blog .content h1 {
-        font-size: 45px;
-    }
-    .blog .content p {
-        font-size: 18px;
-    }
 }
 .blog .container .box1 {
     background-image: url(../imgs/bg-black.jpg);
@@ -1082,3 +1102,165 @@ header .container .login a:hover {
 }
 /* End the latest */
 /* -----------------------------------------------End Page Two------------------------------------------------ */
+
+/* -----------------------------------------------Start Page three------------------------------------------------ */
+.educators {
+    background-image: url(../imgs/background.jpeg);
+    padding: 200px 15px;
+    padding-bottom: 100px;
+}
+@media (max-width: 767px) {
+    .educators {
+        padding-top: 150px;
+    }
+}
+.educators .container .content {
+    padding-bottom: 30px;
+    max-width: 750PX;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .educators .container .content {
+        padding: 0;
+    }
+}
+.educators .container h1 {
+    font-size: 70px;
+    word-spacing: 10px;
+}
+@media (max-width: 767px) {
+    .educators .container h1 {
+        font-size: 42px;
+    }
+    .educators .container p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 968px) {
+    .educators .container .box1 {
+        flex-direction: column;
+    }
+}
+.educators .container .box1 .box {
+    background-image: url(../imgs/bg-black.jpg);
+    max-width: 50%;
+}
+@media (max-width: 968px) {
+    .educators .container .box1 .box {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+.educators .container .box1 .box i {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    transition: .3s;
+}
+.educators .container .box1 .box i:hover {
+    color: #333;
+}
+.educators .container .box1 .box p {
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .educators .container .box1 .box p {
+        font-size: 15px;
+    }
+}
+.educators .container .box a {
+    padding: 15px 35px;
+    margin-top: 20px;
+    border: 1px solid var(--blue-alt-color);
+    border-radius: 6px 25px 6px 25px;
+    transition: .3s;
+    opacity: .8;
+}
+@media (max-width: 767px) {
+    .educators .container .box a {
+        padding: 12px 30px;
+        border-radius: 6px 20px 6px 20px;
+    }
+}
+.educators .container .box a:hover {
+    border-radius: 6px;
+    color: var(--blue-alt-color);
+    opacity: 1;
+}
+.educators .container .box2 {
+    background-image: url(../imgs/blue.jpg);
+}
+@media (max-width: 968px) {
+    .educators .container .box2 {
+        flex-direction: column;
+    }
+}
+.educators .container .box2 .box {
+    width: 600px;
+    padding: 50px 30px;
+}
+@media (max-width: 968px) {
+    .educators .container .box2 .box {
+        width: 100%;
+        padding: 20px 20px 0;
+    }
+}
+.educators .container .box2 .box .cont {
+    width: 40px;
+    height: 40px;
+    cursor: default;
+} 
+.educators .container .box2 .box .cont li {
+    width: 3px;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+@media (max-width: 767px) {
+    .educators .container .box2 .box h2 {
+        font-size: 33px;
+    }
+}
+.educators .container .box2 .box a:hover {
+    color: #ddd;
+}
+.educators .container .box2 .img {
+    width: 45%;
+    display: flex;
+    align-items: flex-end;
+}
+@media (max-width: 968px) {
+    .educators .container .box2 .img {
+        width: 100%;
+        padding: 0 20px 0;
+    }
+}
+.educators .container .box2 img {
+    padding-right: 30px;
+    width: 100%;
+    opacity: .6;
+}
+.using-coding {
+    background-image: url(../imgs/background.jpeg);
+    padding: 0 15px;
+    padding-bottom: 100px;
+}
+.using-coding .container .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.using-coding .container img {
+    width: 150px;
+    height: 50px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 6px;
+}
+.using-coding .container img:not(4) {
+    width: 50px;
+    height: 50px;
+}
+.using-coding .container h1 {
+    padding: 7px 10px;
+}
+/* -----------------------------------------------End Page three------------------------------------------------ */
