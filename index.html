@@ -34,7 +34,7 @@
                 <span class="c-ddd">powered by <strong class="c-white fs-14">N&S</strong></span>
             </a>
             <i class="fa-solid fa-bars toggle-menu c-white"></i>
-            <div class="box between-flex flex-1">
+            <div class="box between-flex flex-1" id="hidden">
                 <ul class="center-flex gap-30">
                     <li>
                         <a href="blog.html">Blog</a>
@@ -188,30 +188,34 @@
                     </p>
                 </div>
             </div>
-            <div class="box2 d-flex text-c w-full gap-50 rad-15 c-ddd p-30">
-                <div class="box between-flex flex-column gap-30">
+            <div class="box2 d-flex text-c w-full rad-15 c-ddd p-relative">
+                <div class="box one active between-flex flex-column gap-30">
+                    <div class="h2">
+                        <h2 class="fs-40">Extremely well done and an excellent example of mastery learning.</h2>
+                    </div>
+                    <div class="img">
+                        <img class="rad-half mb-20" src="imgs/team2.jpg" alt="">
+                        <div>
+                            <h3>Nada Badawy</h3>
+                            <p class="c-blue">@this_Nada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box two between-flex flex-column gap-30">
                     <div class="h2">
                         <h2 class="fs-40">Accidentally got addicted to coding, oops.</h2>
                     </div>
                     <div class="img">
                         <img class="rad-half mb-20" src="imgs/team1.jpg" alt="">
                         <div>
-                            <h3>Nada Badawy</h3>
+                            <h3>Sylvia Yousef</h3>
                             <p class="c-blue">Coder</p>
                         </div>
                     </div>
                 </div>
-                <div class="box between-flex flex-column gap-30">
-                    <div class="h2">
-                        <h2 class="fs-40">Excellent example of mastery learning.</h2>
-                    </div>
-                    <div class="img">
-                        <img class="rad-half mb-20" src="imgs/team2.jpg" alt="">
-                        <div>
-                            <h3>Sylvia Yousef</h3>
-                            <p class="c-blue">@this_Sylvia</p>
-                        </div>
-                    </div>
+                <div class="bullets">
+                    <li class="active one"></li>
+                    <li class="two"></li>
                 </div>
             </div>
             <div class="box3 d-flex gap-20 c-ddd">
@@ -388,5 +392,7 @@
         </div>
     </div>
     <!-- End footer -->
+
+    <script src="java.js"></script>
 </body>
 </html>
