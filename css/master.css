@@ -541,11 +541,6 @@ header .container .login a:hover {
 .use-coding .container .box1 .box p {
     line-height: 30px;
 }
-@media (max-width: 767px) {
-    .use-coding .container .box1 .box p {
-        font-size: 15px;
-    }
-}
 .use-coding .container .box2 {
     justify-content: center;
     background-image: url(../imgs/bg-black.jpg);
@@ -561,6 +556,11 @@ header .container .login a:hover {
     position: absolute;
     transition: 1.3s;
     margin-top: 50px;
+}
+@media (max-width: 1287px) {
+    .use-coding .container .box2 .box {
+        margin-top: 25px;
+    }
 }
 .use-coding .container .box2 .box.active {
     opacity: 1;
