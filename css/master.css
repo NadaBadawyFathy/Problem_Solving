@@ -171,7 +171,7 @@ header .container .login a:hover {
     color: white;
 }
 .landing .container img {
-    max-width: 100%;
+    width: 500px;
 }
 .landing .container .img {
     animation: up-and-down linear 2.5s infinite;
@@ -317,6 +317,9 @@ header .container .login a:hover {
 .feedback-rank .container .box h2 {
     font-size: 40px;
 }
+.feedback-rank .container .box p {
+    line-height: 30px;
+}
 @media (max-width: 767px) {
     .feedback-rank .container .box h2 {
         font-size: 35px;
@@ -425,46 +428,12 @@ header .container .login a:hover {
 .engeded .container .box h2 {
     font-size: 40px;
 }
+.engeded .container .box p {
+    line-height: 30px;
+}
 @media (max-width: 767px) {
     .engeded .container .box h2 {
         font-size: 35px;
-    }
-}
-.engeded .container .box .img.img1 ,
-.engeded .container .box .img.img2 {
-    overflow: hidden;
-}
-.engeded .container .box .img1::after ,
-.engeded .container .box .img2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 18px;
-    color: #ddd;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(0 0 0 /60%);
-    transition: .5s;
-}
-.engeded .container .box .img1::after {
-    content: "Author kata that focus on your interests and train specific skill sets. Challenge the community with your insight and code understanding. Create everything from common developer interview questions to challenges that push the limits of your creativity. Gain honor within the coding dojo.";
-}
-.engeded .container .box .img2::after {
-    content: "Compare your solution with others after each kata for greater understanding. Discuss kata, best practices, and innovative techniques with the community. Have your mind blown by how different other solutions can be from your own.";
-}
-.engeded .container .box .img1:hover::after,
-.engeded .container .box .img2:hover::after {
-    bottom: 0;
-}
-@media (max-width: 555px) {
-    .engeded .container .box .img::after {
-        font-size: 13px;
-        line-height: 25px;
     }
 }
 .engeded .container .box img {
